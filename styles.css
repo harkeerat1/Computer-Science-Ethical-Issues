@@ -1,0 +1,475 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+body{
+
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    margin:0;
+    color:white;
+    background: rgb(0, 0, 0);
+   
+
+
+}
+
+p{
+    font-size:18px;
+}
+
+section{
+
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:400px;
+    padding: 100px 20vw;
+
+    
+    
+
+}
+
+.red{
+    background-color:rgb(231, 69, 20);
+}
+
+.pink{
+    background-color: rgb(185, 22, 190);
+}
+
+.green{
+    background-color: rgb(27, 189, 27);
+
+    
+}
+
+.purple{
+    background-color: rgb(113, 39, 184);
+}
+
+
+
+.blacktext{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bubble::after{
+
+    content: '';
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    position:absolute;
+    bottom:0;
+    height:95%;
+    width:100%;
+    background-color:rgb(231, 69, 20);
+    z-index: -1;
+    
+
+
+
+
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 210px;
+}
+
+.wave1 .shape-fill {
+    fill: rgb(231, 69, 20);
+}
+
+
+
+
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+   
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+}
+
+.wave2 .shape-fill {
+    fill: #000000;
+}
+
+.diff .shape-fill{
+    fill:rgba(180, 13, 180, 0.8);
+}
+
+.diff2 .shape-fill{
+    fill:rgb(27, 189, 27);
+}
+
+
+
+
+.header{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:100px;
+    padding: 10px 20vw;
+    background-color: rgba(231, 69, 20);
+}
+
+.wave3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 100px;
+}
+
+.wave3 .shape-fill {
+    fill: rgba(77, 238, 28, 0.5);
+}
+
+.second{
+    padding-top:100px;
+}
+
+
+.header h1{
+    font-family: 'Pattaya', sans-serif;
+    font-size:40px;
+    
+    
+    
+}
+
+.header img{
+    width:300px;
+}
+
+.bar{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:40px;
+    padding:0;
+    background-color: rgba(99, 178, 180, 0.432);
+}
+
+.bar li{
+    display:inline;
+    padding:50px;
+}
+
+
+.bar li:hover{
+    background-color: red;
+    
+}
+
+.navbar{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:10px;
+    
+    padding:0;
+    background-color: rgb(209, 65, 21);
+}
+
+.navbar a{
+    display:inline;
+    padding:10px;
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.685);
+    font-weight:1000;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color:rgba(238, 28, 227, 0.5);
+    padding-top:19px;
+    padding-bottom:17px;
+}
+
+
+
+
+.pix img{
+    
+    width:200px;
+    height:auto;
+
+    
+    
+    
+    
+    
+
+   
+    display:inline;
+
+    
+    
+    
+    
+
+    
+
+    
+    
+
+}
+
+.spacer{
+    padding-left:70px;
+    
+}
+
+.pix{
+    padding-top:50px;
+    padding-left:50px;
+
+    
+
+}
+
+
+
+
+
+.hidden h1,.hidden p{
+
+    opacity:0;
+    filter:blur(5px);
+    transform: translateX(-30%);
+    
+    transition: all 1.35s;
+ 
+ 
+}
+
+.show h1, .show p{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+    
+}
+
+
+.hidden img{
+
+    opacity:0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    
+    transition: all 0.7s;
+
+}
+
+.show img{
+
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+
+}
+
+
+
+.foot{
+
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:150px;
+    padding: 100px 20vw;
+
+    
+
+}
+
+.footer .shape-fill{
+   fill:rgb(168, 13, 13);
+}
+
+.foot img{
+    width:300px;
+    padding-top:100px;
+    
+}
+
+
+.pix2 img{  
+    width:200px;
+    height:auto;
+    display:inline;
+}
+
+.pix2{
+    padding-top:50px;
+    
+}
+
+
+.bar2{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:40px;
+    padding:0;
+    background-color: rgba(99, 180, 126, 0.432);
+}
+
+.bar2 li{
+    display:inline;
+    padding:25px;
+    padding-bottom:17px;
+    
+}
+
+
+.bar2 li:hover{
+    background-color: red;
+    
+}
+
+.formsec{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:400px;
+    padding: 100px 20vw;
+
+    background-color: rgb(0, 0, 0);
+
+    
+}
+
+.reddishwave .shape-fill{
+    fill:red;
+}
+
+.waveop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+}
+
+.waveop .shape-fill {
+    fill: #a00c0c;
+}
+
+.formsec {
+    text-align:center;
+}
+
+.form{
+    text-align: center;
+}
+
+.form form{
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border-radius: 50px;
+    
+    background-color: #d359123d;
+
+    
+
+}
+
+
+.form input,textarea,button{
+
+    margin-bottom: 20px;
+    margin-left:50px;
+    margin-right:50px;
+    
+    width:400px;
+    height:40px;
+
+    border-radius: 10px;
+    border-color:white;
+
+    background-color: rgba(106, 13, 168, 0.295);
+    color:whitesmoke;
+}
+
+
+
+.form textarea {
+    resize: none;
+}
+
+.form button{
+    
+    width:200px;
+    height:50px;
+
+    background-color: rgba(24, 184, 58, 0.452);
+    color:white;
+}
+
+.form button:hover{
+    background-color: rgba(21, 47, 163, 0.432);
+}
